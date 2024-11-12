@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Family Poll App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Family Poll App</h1>
+        <div id="pollSection">
+            <h2>Create a Poll</h2>
+            <input type="text" id="pollQuestion" placeholder="Enter your question here" />
+            <input type="text" id="pollOption1" placeholder="Option 1" />
+            <input type="text" id="pollOption2" placeholder="Option 2" />
+            <button onclick="createPoll()">Create Poll</button>
+        </div>
+
+        <div id="pollDisplay" class="poll-display">
+            <h2>Current Poll</h2>
+            <div id="currentPoll"></div>
+            <div id="pollResults"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
